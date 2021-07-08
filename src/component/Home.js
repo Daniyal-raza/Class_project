@@ -1,9 +1,13 @@
+
+import { Header } from '../config/Header'
+
 import React from 'react'
 
 export const Home = () => {
     return (
         <div>
-            <h3>Home</h3>
+            <Header/>
+            <h1>Home</h1>
         </div>
     )
 }
