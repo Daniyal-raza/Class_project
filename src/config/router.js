@@ -1,5 +1,6 @@
 import {
     BrowserRouter as Router,
+    Route,
 
 } from 'react-router-dom'
 
@@ -12,8 +13,8 @@ export const AppRouter = () => {
     return (
         <Router>
             <Route path='/home' component={Home}/>
-            <Route path='/About' component={About}/>
-            <Route path='/Contact' component={Contact}/>
+            <Route path='/about' component={About}/>
+            <Route path='/contact' component={Contact}/>
         </Router >
     )
 }
