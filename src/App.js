@@ -1,16 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
 
-import { AppRouter } from './config/Router';
+import AppRouter from './config/Router'
+import {Provider} from 'react-redux';
+import store from './store';
+
 
 
 
 
 function App() {
   return (
-    <div>
-      <AppRouter/>
-    </div>
+
+     <Provider store={store}>
+   <AppRouter/>
+   </Provider>
+
   );
 }
 

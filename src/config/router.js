@@ -1,20 +1,23 @@
-import {
-    BrowserRouter as Router,
-    Route,
+import{
+BrowserRouter as Router,
+Route,
 
-} from 'react-router-dom'
+}from 'react-router-dom'
 
-import { Home } from "../component/Home";
-import { About } from "../component/About";
-import { Contact } from "../component/Contact";
+import Login from '../containers/Login';
+import Signup from '../containers/Signup';
+import Home from '../containers/Home';
 
-
-export const AppRouter = () => {
-    return (
+function AppRouter(){
+    return(
         <Router>
-            <Route path='/home' component={Home}/>
-            <Route path='/about' component={About}/>
-            <Route path='/contact' component={Contact}/>
-        </Router >
+            <switch>
+                <Route exact path='/' component={Login}/>
+                <Route exaSignupSignupct path='/signup' component={Signup}/>
+                <Route exact path='/home' component={Home}/>
+            </switch>
+        </Router>
     )
+
 }
+export default AppRouter;
